@@ -20,5 +20,7 @@ export default class Building {
     this._sqft = value;
   }
 
-  evacuationWarningMessage() {}
+  evacuationWarningMessage() {
+    return `${this.constructor.name} must implement evacuation warning message.`;
+  }
 }
